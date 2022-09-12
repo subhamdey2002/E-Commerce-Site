@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='viewProducts.css'>
+    <link rel='stylesheet' href='myCart.css'>
+    <title>View Products</title>
+    <script src='https://kit.fontawesome.com/49e764df9c.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class='navBar'>
+        <div class='userName'>
+            <i class='fa fa-user'></i>
+            <h3>Hi,$userName</h3>
+        </div>
+        <div class='filter'>
+            <form action='filter.php' method='GET'>
+                <input type='text' placeholder='Search by Tags' name='filterTag'>
+                <button type='submit'><i class='fa fa-search'></i></button>
+            </form>
+        </div>
+        <div class='controllers'>
+            <a href=''>
+                <button>
+                    <span>My Cart</span>
+                    <i class='fas fa-shopping-cart'></i>
+                    <span id='itemCounter'>0</span>
+                </button>
+            </a>
+            <a href='logout.php'>
+                <button class='logout'>
+                    <span>Logout</span>
+                    <i class='fas fa-sign-out-alt'></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class='mainContainer'>
+        <div class='productsContainer'>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.</p>
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i><span class="price">5000</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i>5000</span>
+                    </div>
+                </div>
+            </div>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i>5000</span>
+                    </div>
+                </div>
+            </div>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i>5000</span>
+                    </div>
+                </div>
+            </div>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i>5000</span>
+                    </div>
+                </div>
+            </div>
+            <div class='productBox'>
+                <a href='delFromCart.php'>
+                    <span class='delBtn'><i class='fa fa-trash'></i></span>
+                </a>
+                <div class='productImg'>
+                    <img src='../Shared/images/05_07_22_09_07_52.webp' alt='image'>
+                </div>
+                <div class='productDetails'>
+                    <span class='productName'>RGB Headphone</span>
+                    <p class='desc'>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Alias, a.
+                    <div class='priceBox'>
+                        <span>5<i class='fa fa-star'></i></span>
+                        <span class='priceTag'><i class='fa fa-rupee'></i>5000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='billingcontainer'>
+            <h1>Order Summary</h1>
+            <div class='subTotal'>
+                <span>Sub Total :</span>
+                <span>$ 7599</span>
+            </div>
+            <p class='lable'>Shipping & Taxes :- </p>
+            <div class='taxBox'>
+                <p class='row'>
+                    <span>Estimated shipping :</span>
+                    <span>$ 34</span>
+                </p>
+                <p class='row'>
+                    <span>CGST :</span>
+                    <span>$ 102</span>
+                </p>
+            </div>
+            <div class='orderTotal'>
+                <span>Order Total :</span>
+                <span>$ 7700</span>
+            </div>
+            <div class='addressBox'>
+                <p>The order will be delivered to the registered address.</p>
+                <button onclick='toggleAddressBox()'>Change delivary address</button>
+                <form action='placeOrder.php' method='post' id='form'>
+                    <textarea class='hidden' name='delivaryAddress' id='addressBox'
+                        cols='20' rows='6' placeholder='Enter the delivary address'></textarea>
+            </div>
+            <div class='placeOrderbutton'>
+                <button id='submit'>Confirm Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const addressBox = document.getElementById('addressBox');
+    const submitBtn = document.getElementById('submit');
+    const form = document.getElementById('form');
+
+    function toggleAddressBox() {
+        // console.log('clicked');
+        addressBox.classList.toggle('hidden');
+    }
+
+    submitBtn.addEventListener('click',()=>{
+        form.submit();
+    })
+
+</script>
+
+</html>

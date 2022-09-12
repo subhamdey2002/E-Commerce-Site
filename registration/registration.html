@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <form action="registration.php" method="post">
+            <h3 class="formHeader">Registration</h3>
+
+            <div class="userMode">
+                <label for="mode">Choose a user mode :</label>
+                <select name="mode" id="mode">
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <input  type="text" class="inputField" name="userName" placeholder="Enter Your user Name" required>
+            <input  type="text" class="inputField" name="userMobile" placeholder="Enter mobile number" required>
+            <input  type="text" class="inputField" id="userPasswordDEC" name="userPassword" placeholder="Enter your Password" required>
+            <input  type="password" id="userPasswordENC" class="inputField"  oninput="print()" required placeholder="Confirm the password">
+
+            <input type="submit" value="Register" class="submitBtn" disabled id="submitbtn" >
+            <div class="failurePromt" id="failurePromt">
+                <h3 id="msg"></h3>
+            </div>
+        </form>
+    </div>
+
+    <div class="logIn">
+        <p>Already have an account? </p>
+        <p><a href="../login/login.html">Log In</a></p>
+    </div>
+</body>
+<script>
+    const userPasswordDEC =  document.getElementById("userPasswordDEC");
+    const userPasswordENC =  document.getElementById("userPasswordENC");
+    const failurePromt = document.getElementById("failurePromt");
+    const submitbtn = document.getElementById("submitbtn");
+    const msg = document.getElementById("msg");
+function print()
+{ 
+    if(userPasswordDEC.value !== userPasswordENC.value) {
+        submitbtn.setAttribute('disabled', 'disabled');
+        msg.innerText = "Password Mismatched!!";
+        failurePromt.style.bottom = "-45px";
+        submitbtn.style.cursor = "not-allowed";
+    }
+    else {
+        failurePromt.style.bottom = "0px";
+        submitbtn.removeAttribute('disabled');
+        submitbtn.style.cursor = "pointer";
+    }
+    }
+</script>
+</html>
