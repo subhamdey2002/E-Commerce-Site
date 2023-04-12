@@ -136,8 +136,9 @@ body{
 .card{
     position: relative;
     width: calc((100%/4) - 60px );
-    max-width: 300px;
+    max-width: 250px;
     height: fit-content;
+    /* height: 200px; */
     background-color: white;
     border: none;
     border-radius: 10px;
@@ -147,7 +148,7 @@ body{
 .card>.procuctImg{
     overflow: hidden;
     border-radius: 10px;
-    height: 200px;
+    height: 100px;
 }
 .card>.procuctImg>img{
     transition: all .75s ease-in-out;
@@ -166,13 +167,23 @@ body{
 .card>.productDesc,
 .card>.productRatingprice{
     height: calc(25%);
-    font-size: 1rem;
+    font-size: .75rem;
     padding-inline: 10px;
     margin-bottom: 5px;
 }
 
 .card>.productDesc{
     overflow: auto;
+    line-height: 14px;
+    font-size: .65rem;
+}
+
+.card>.productDesc::-webkit-scrollbar{
+    display: none;
+}
+
+.card>.productDesc>.productName {
+    font-size: .75rem;
 }
 
 .card>.productRatingprice{
