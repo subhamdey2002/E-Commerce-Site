@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: poppins;
+}
+
+body{
+    background: rgb(42,163,209);
+    background: linear-gradient(3deg, rgba(42,163,209,1) 2%, rgba(14,65,130,1) 53%, rgba(0,16,91,1) 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container{
+    width: 30vw;
+    /* background-color: rgb(79, 191, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  2px solid whitesmoke;
+    border-radius: 8px;
+}
+
+.right-container{
+    padding: 20px;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    color: white;
+}
+
+form>h3{
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: small;
+    font-weight: 400;
+}
+
+input,
+select{
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px rgba(255, 255, 255, 0.377) solid;
+    background-color: transparent;
+    outline: none;
+    padding: 4px;
+    width: 100%;
+}
+
+::placeholder{
+    color: whitesmoke;
+}
+
+option{
+    background-color: rgba(112, 112, 112, 0.137);
+    color: rgb(32, 32, 32);
+  }
+
+.userMode,
+.userMode>select{
+    width: 100%;
+}
+
+.btn{
+    padding-block: 10px;
+    background-color: rgb(31, 135, 255);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(31, 135, 255);
+    background-color: white;
+}
+
+
+.login-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: smaller;
+    margin-top: 20px;
+    color: white;
+}
+
+.login-link>.caption{
+    width: 60%;
+}
+
+.login-link>p>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-link>p>a:hover{
+    text-decoration: underline;
+}

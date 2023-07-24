@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: poppins;
+}
+
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logIn>p{
+    margin-right: 10px;
+}
+
+.formHeader{
+    color: white;
+    font-size: 2rem;
+}
+
+form{
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(32, 213, 105);
+    padding: 25px;
+    border: none;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 6px 4px 20px 1px black;
+}
+
+.inputField{
+    width: calc(100%);
+    padding: 5px;
+}
+
+.submitBtn{
+    padding: 10px 20px;
+    background-color:  #faf20b;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor:not-allowed;
+}
+
+.failurePromt {
+    display: block;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    background-color: red;
+    border-radius: 10px;
+    bottom: 0px;
+    z-index: -1;
+    overflow: none;
+    transition: all 0.35s ease-in-out;
+}
+
+@keyframes rolldown {
+    from {
+        bottom: 0px;
+    }
+    to {
+        bottom: -46px;
+    }
+}
