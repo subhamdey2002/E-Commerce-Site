@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>View Products</title>
+    <link rel='stylesheet' href='viewProducts.css'>
+
+    <script src='https://kit.fontawesome.com/49e764df9c.js' crossorigin='anonymous'></script>
+</head>
+<body>
+
+    <div class='navBar'>
+        <div class='userName'>
+            <i class='fa fa-user'></i>
+            <h3>Hi, Subham Dey</h3>
+        </div>
+        <!-- <div class='navTabs'></div> -->
+        <div class='filter'>
+            <form action='filter.php' method='GET'>
+                <input type='text' placeholder='Search by Tags' name='filterTag'>
+                <button type='submit'><i class='fa fa-search' ></i></button>
+            </form>
+        </div>
+        <div class='controllers'>
+            <a href='viewProducts.php'>
+                <button>
+                    <span>All Product</span>
+                    <i class='fas fa-store'></i>
+                </button>
+            </a>
+            
+            <a href=''>
+                <button>
+                    <span>My Cart</span>
+                    <i class='fas fa-shopping-cart'></i>
+                    <span id='itemCounter'>12</span>
+                </button>
+            </a>
+            <a href='.php'>
+                <button>
+                    <span>My Orders</span>
+                    <i class='fas fa-shopping-bag'></i>
+                </button>
+            </a>
+            <a href='logout.html'>
+                <button class='logout'>
+                    <span>Logout</span>
+                    <i class='fas fa-sign-out-alt'></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class='container'>
+
+        <div class='card'>
+            <form action='addToCart.php' method='get'>
+                <button class='addToCart' type='submit'>
+                    <i class='fas fa-shopping-cart'></i>
+                </button>
+            </form>
+            <div class='procuctImg'>
+                <img src='../Shared/images/05_07_22_09_07_37.webp' alt='prouctImg'>
+            </div>
+            <div class='productDesc'>
+                <p class='productName'>Foxi Headphones</p>
+                <p>Lorem ipsum dololuptates quaerat quod ur atque commodi modi sapiente tempora suscipit!</p>
+            </div>
+            <div class='productRatingprice' >
+                <form action='rate.php' class='ratingForm' method='post'>
+                    <input type='range' max='5' min='0' step='1' value='3' class='rateBar' name='rate' id="rateBar" >
+                    <span>3<i class='fas fa-star'></i></span>
+                    <button type='submit' class='rateBtn'> Rate </button>
+                </form>
+                <p class='rating' id='showRateBarBtn' onclick='toggleRateBar(this)' >
+                    <span>2</span>
+                    <i class='fas fa-star'></i>
+                </p>
+                <p class='price'><span><i class='fas fa-rupee-sign'></i></span> 1200</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    function toggleRateBar(ele) {
+        ele.previousElementSibling.classList.toggle(`hidden`);
+    }
+
+    // function showRateBar(){
+        // const rateForms = document.getElementsByClassName('ratingForm');
+
+        // Array.from(rateForms).forEach((element)=>{
+        //     console.log(element);
+        //     element.addEventListener('click',(ele)=>{
+        //         console.log('CLicked');
+        //         // ele.classList.toggle('hidden');
+        //     });
+        // })
+    // }
+
+</script>
+
+</html>

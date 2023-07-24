@@ -1,0 +1,195 @@
+.overLay {
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 100;
+}
+
+.popUp {
+position: absolute;
+top: 65%;
+left: 50%;
+z-index: 101;
+transform: translate(-50%, -50%);
+width: 60vw;
+}
+
+.close-popUp-btn {
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    color: rgb(255, 28, 28);
+    z-index: 103;
+    cursor: pointer;
+    transition: all 0.45s ease;
+    font-size: 1.2rem;
+    }
+
+.popUp>.popup-card {
+width: 100%;
+position: relative;
+height: 18vw;
+background-color: white;
+border: none;
+border-radius: 10px;
+box-shadow: 5px 5px 5px 2px rgb(38, 36, 36);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.popUp>.popup-card>.productImg {
+height: 100%;
+overflow: hidden;
+width: 40%;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: gray; */
+}
+
+.popUp>.popup-card>.productImg>img {
+transition: all .75s ease-in-out;
+width: 100%;
+cursor: pointer;
+max-height: 100%;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+object-fit: contain;
+padding: 10px;
+}
+
+.popUp>.popup-card>.productDetails {
+width: 60%;
+padding: 15px;
+height: 100%;
+/* background-color: rgb(255, 132, 132); */
+background-color: rgb(255, 242, 217);
+}
+
+.popUp>.popup-card>.productDetails>.productDesc {
+/* background-color: aqua; */
+height: 60%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.popUp>.popup-card>.productDetails>.productDesc>.productName{
+font-size: 1.5rem;
+font-weight: 600;
+color: rgb(31, 31, 31);
+}
+
+.popUp>.popup-card>.productDetails>.productDesc>.productDescription{
+font-size: 1rem;
+font-weight: 400;
+color: rgb(31, 31, 31);
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice{
+/* background-color: aquamarine; */
+height: 40%;
+}
+
+
+
+.popUp>.popup-card>.productDetails>.productRatingprice{
+display: flex;
+align-items: end;
+justify-content: space-between;
+padding-inline:10px;
+position: relative;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>form.ratingForm{
+width: 18vw;
+position: absolute;
+border: none;
+padding: 10px;
+border-radius: 8px;
+left: 15%;
+top: 40%;
+z-index: 99;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+/* transform: rotate(-90deg); */
+background-color: rgb(194, 194, 194);
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>form.ratingForm>input{
+cursor:grab;
+width: 60%;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>form.ratingForm>button{
+width: 20%;
+background-color: rgb(19, 114, 215);
+color: white;
+font-weight: bold;
+border: none;
+border-radius: 4px;
+padding: 3px;
+cursor: pointer;
+width: 40%;
+font: 1em;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>form.ratingForm>span{
+width: 20%;
+/* transform: rotate(90deg); */
+font-weight: bold;
+color: black;
+font-size: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-inline: 10px;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>.rating>span
+{
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>.price,
+button.popup-addToCart{
+    font-weight: bold;
+    background-color: rgb(19, 114, 215);
+    color: white;
+    border: 2px solid rgb(19, 114, 215);
+    border-radius: 10px;
+    cursor: pointer;
+    padding:  6px 20px;
+    transition: all 0.35s ease;
+    font-family: poppins;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>.price>i,
+button.popup-addToCart>.fa-shopping-cart{
+    margin-right: 7px;
+}
+
+.popUp>.popup-card>.productDetails>.productRatingprice>.price:hover,
+.popUp>.popup-card>.productDetails>.productRatingprice>.addToCart:hover{
+    border: 2px solid rgb(19, 114, 215);
+    color: rgb(19, 114, 215);
+    background-color: white;
+}
+
+
+.close-popUp-btn:hover {
+scale: 1.2;
+}
+
+.hidden {
+display: none;
+}
