@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login2.css">
+    <title>Login page</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="right-container">
+            <div class="login-form">
+                <form action="login.php" method="post" class="">
+                    <h3 class="form-heading">Login</h3>
+
+                    <div class="userMode">
+                        <label for="mode">Choose a user mode :</label>
+                        <select name="mode" id="mode" class="" aria-label="">
+                            <option value="customer" selected>Customer</option>
+                            <option value="admin" >Admin</option>
+                        </select>
+                    </div>
+
+                    <input  type="text" class="input-fields" name="userName" placeholder="Enter Your user Name" required>
+                    <input  type="text" class="input-fields" name="userMobile" placeholder="Enter mobile number" required>
+                    <input  type="password" name="userPassword" id="userPassword" class="input-fields" required placeholder="Enter your password">
+
+                    <input type="submit" value="Log In" class="btn">
+                </form>
+            </div>
+            <div class="reg-link">
+                <p class="caption" >Dont have an Account ?</p>
+                <p><a href="../registration/registration.html">Sign Up</a></p>
+            </div>
+    </div>
+</div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+</html>
